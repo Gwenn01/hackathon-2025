@@ -1,13 +1,11 @@
 // database
 const mysql = require("mysql");
 
-require("dotenv").config();
-
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "gwen0701",
-  database: "room_tracker",
+  database: "ccit_db",
 });
 
 db.connect((err) => {
